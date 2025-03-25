@@ -28,14 +28,23 @@ $ fastfetch
 
 ## Day 1
 
+
 ```
 x_1 x_2 x_3 x_4 x_5
 
+Part 1:
 find(2020 - x_i)
+  
+  O(N^2) nested loop
+  O(NlogN) sort + bsearch or two pointers
+  O(N) hash amort.
 
-O(N^2) nested loop
-O(NlogN) sort + bsearch
-O(N) hash amort.
+Part 2:
+find(2020 - x_i - x_j)
+  
+  O(N^3) nested loop
+  O(N^2 logN) sort + bsearch
+  O(N^2) hash amort. or sort + two pointers
 ```
 
 ## FAQ
